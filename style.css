@@ -1,5 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
-* {
-    font-family: 'Montserrat', 'Open Sans', sans-serif;;
+:root {
+    --main-bg: #f7f8fc;
 }
+
+body {
+    margin: 0;
+    background-color: (--main-bg);
+    min-height: 100vh;
+    height: 100%;
+    display: grid;
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto 1fr;
+ }
+
+ .header {
+    display: grid;
+    height: 20vh;
+    background-color: (--main-bg);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; 
+}
+
+  .sidebar {
+    display: grid;
+    background-color: rgb(86, 90, 90);
+    grid-row: 1 / 3;
+  }
+
